@@ -1,0 +1,485 @@
+{
+  "id": "2805600",
+  "name": "航天特有图标库",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "该项目图标库由“陕西华路航天科技有限公司”-UI设计师 “纪哲” 设计制作",
+  "glyphs": [
+    {
+      "icon_id": "24278540",
+      "name": "覆盖",
+      "font_class": "x-cover",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "24278485",
+      "name": "弧段",
+      "font_class": "x-arc-segment",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "24277723",
+      "name": "星历",
+      "font_class": "x-ephemeris",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "24277712",
+      "name": "控制计算",
+      "font_class": "x-calculate",
+      "unicode": "e6c0",
+      "unicode_decimal": 59072
+    },
+    {
+      "icon_id": "24277713",
+      "name": "星上时",
+      "font_class": "x-star-time",
+      "unicode": "e6c1",
+      "unicode_decimal": 59073
+    },
+    {
+      "icon_id": "24277714",
+      "name": "点波束",
+      "font_class": "x-point-beam",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
+      "icon_id": "24277141",
+      "name": "功率",
+      "font_class": "x-power",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "24277143",
+      "name": "公式",
+      "font_class": "x-fx",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "24277144",
+      "name": "轨道",
+      "font_class": "x-orbit",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "24277145",
+      "name": "火箭",
+      "font_class": "x-rocket",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "24277146",
+      "name": "回路",
+      "font_class": "x-loop-data",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "24277147",
+      "name": "加密",
+      "font_class": "x-encrypt",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "24277148",
+      "name": "机械臂",
+      "font_class": "x-mechanical-arm",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "24277149",
+      "name": "计划",
+      "font_class": "x-plan",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "24277150",
+      "name": "解密",
+      "font_class": "x-decrypt",
+      "unicode": "e684",
+      "unicode_decimal": 59012
+    },
+    {
+      "icon_id": "24277151",
+      "name": "监控",
+      "font_class": "x-monitor",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "24277152",
+      "name": "角度",
+      "font_class": "x-angle",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "24277153",
+      "name": "驾驶舱",
+      "font_class": "x-control-cabin",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "24277154",
+      "name": "监视",
+      "font_class": "x-monitor-data",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "24277155",
+      "name": "经纬度",
+      "font_class": "x-lat-long",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "24277156",
+      "name": "收发",
+      "font_class": "x-receive-send",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "24277157",
+      "name": "湿度",
+      "font_class": "x-humidity",
+      "unicode": "e68b",
+      "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "24277158",
+      "name": "燃料",
+      "font_class": "x-fuel",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "24277159",
+      "name": "任务",
+      "font_class": "x-task",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "24277160",
+      "name": "天线",
+      "font_class": "x-antenna",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "24277161",
+      "name": "链监",
+      "font_class": "x-chain-supervisor",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "24277162",
+      "name": "天体",
+      "font_class": "x-galaxy",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "24277163",
+      "name": "数据中心",
+      "font_class": "x-data-center",
+      "unicode": "e691",
+      "unicode_decimal": 59025
+    },
+    {
+      "icon_id": "24277164",
+      "name": "推进器",
+      "font_class": "x-engine",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "24277165",
+      "name": "协议",
+      "font_class": "x-agreement",
+      "unicode": "e693",
+      "unicode_decimal": 59027
+    },
+    {
+      "icon_id": "24277166",
+      "name": "设备",
+      "font_class": "x-device",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "24277168",
+      "name": "温度",
+      "font_class": "x-temperature",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "24277169",
+      "name": "投影",
+      "font_class": "x-projection",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "24277170",
+      "name": "外测数据",
+      "font_class": "x-tracking",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "24277172",
+      "name": "空间站",
+      "font_class": "x-space-site",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "24277173",
+      "name": "调度",
+      "font_class": "x-dispatch",
+      "unicode": "e69b",
+      "unicode_decimal": 59035
+    },
+    {
+      "icon_id": "24277174",
+      "name": "太阳帆板",
+      "font_class": "x-sun-board",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "24277175",
+      "name": "预报",
+      "font_class": "x-prediction",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "24277176",
+      "name": "源码",
+      "font_class": "x-origin-code",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "24277178",
+      "name": "星地链接",
+      "font_class": "x-star-earth-link",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "24277179",
+      "name": "载荷",
+      "font_class": "x-load-device",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "24277180",
+      "name": "转发器",
+      "font_class": "x-repeater",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "24277182",
+      "name": "遥控",
+      "font_class": "x-telecontrol",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "24277183",
+      "name": "测量船",
+      "font_class": "x-surveying-ship",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "24277184",
+      "name": "遥控发令",
+      "font_class": "x-cmd-telecontrol",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "24277185",
+      "name": "场景",
+      "font_class": "x-scene",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "24277186",
+      "name": "电流",
+      "font_class": "x-electric-current",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "24277187",
+      "name": "卫星",
+      "font_class": "x-satellite",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "24277189",
+      "name": "方向",
+      "font_class": "x-direction",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "24277190",
+      "name": "测站",
+      "font_class": "x-observe-station",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "24277191",
+      "name": "遥控作业",
+      "font_class": "x-teleoperation",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "24277192",
+      "name": "遥测中断",
+      "font_class": "x-telemetry-exception",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "24277193",
+      "name": "遥测数据",
+      "font_class": "x-telemetry-data",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "24277194",
+      "name": "干扰",
+      "font_class": "x-emi",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "24277195",
+      "name": "定位",
+      "font_class": "x-gps",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    },
+    {
+      "icon_id": "24277196",
+      "name": "传输",
+      "font_class": "x-transmission",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "24277197",
+      "name": "星下点",
+      "font_class": "x-satellite-point",
+      "unicode": "e6b3",
+      "unicode_decimal": 59059
+    },
+    {
+      "icon_id": "24277198",
+      "name": "星间链接",
+      "font_class": "x-star-link",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "24277199",
+      "name": "姿态",
+      "font_class": "x-flight-attitude",
+      "unicode": "e6b5",
+      "unicode_decimal": 59061
+    },
+    {
+      "icon_id": "24277200",
+      "name": "引导数据",
+      "font_class": "x-boot-data",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "24277201",
+      "name": "遥控帧",
+      "font_class": "x-telecontrol-frame",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "24277202",
+      "name": "帧格式",
+      "font_class": "x-format-frame",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "24277203",
+      "name": "星座",
+      "font_class": "x-constellation",
+      "unicode": "e6b9",
+      "unicode_decimal": 59065
+    },
+    {
+      "icon_id": "24277204",
+      "name": "电压",
+      "font_class": "x-voltage",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
+      "icon_id": "24277205",
+      "name": "地球",
+      "font_class": "x-earth",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "24277206",
+      "name": "定轨",
+      "font_class": "x-orbit-determine",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "24277207",
+      "name": "坐标系",
+      "font_class": "x-coordinate-system",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "24277208",
+      "name": "波束",
+      "font_class": "x-wave-beam",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    }
+  ]
+}
