@@ -7,19 +7,19 @@
 ### 方式一：直接下载
 
 1. 下载整个项目
-2. 将 `dist` 目录下的以下文件复制到你的项目中：
-   - `dist/iconfont.css`
-   - `dist/iconfont.js`
-   - `dist/iconfont.ttf`
-   - `dist/iconfont.woff`
-   - `dist/iconfont.woff2`
+2. 将以下文件复制到你的项目中：
+   - `iconfont.css`
+   - `iconfont.js`
+   - `iconfont.ttf`
+   - `iconfont.woff`
+   - `iconfont.woff2`
 
-<!-- ### 方式二：通过 CDN 引入
+### 方式二：通过 CDN 引入
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Space-Huntsman/xayy-space-iconfont/dist/iconfont.css">
-<script src="https://cdn.jsdelivr.net/gh/Space-Huntsman/xayy-space-iconfont/dist/iconfont.js"></script>
-``` -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Space-Huntsman/xayy-space-iconfont@gh-pages/iconfont.css">
+<script src="https://cdn.jsdelivr.net/gh/Space-Huntsman/xayy-space-iconfont@gh-pages/iconfont.js"></script>
+```
 
 ## 使用方法
 
@@ -48,7 +48,7 @@ Font Class 是 Unicode 使用方式的一种变种，主要是解决 Unicode 书
 - 通过一些技巧，支持像字体那样，通过 `font-size`、`color` 来调整样式。
 
 ```html
-<script src="dist/iconfont.js"></script>
+<script src="iconfont.js"></script>
 
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-xxx"></use>
@@ -72,7 +72,7 @@ Font Class 是 Unicode 使用方式的一种变种，主要是解决 Unicode 书
 
 ## 图标预览
 
-你可以通过访问 `dist/index.html` 查看所有可用的图标，并可以直接复制对应的代码。
+你可以通过访问 [在线预览](https://space-huntsman.github.io/xayy-space-iconfont) 查看所有可用的图标，并可以直接复制对应的代码。
 
 ## 图标列表
 
@@ -85,7 +85,7 @@ Font Class 是 Unicode 使用方式的一种变种，主要是解决 Unicode 书
 
 ## 开发
 
-本项目的所有图标源文件和生成的资源文件都位于 `dist` 目录下。
+本项目的所有图标源文件和生成的资源文件都位于根目录下。
 
 ## 许可证
 
