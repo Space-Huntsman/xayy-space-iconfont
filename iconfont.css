@@ -1,0 +1,287 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2805600 */
+  src: url('iconfont.woff2?t=1743468307655') format('woff2'),
+       url('iconfont.woff?t=1743468307655') format('woff'),
+       url('iconfont.ttf?t=1743468307655') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-x-cover:before {
+  content: "\e699";
+}
+
+.icon-x-arc-segment:before {
+  content: "\e695";
+}
+
+.icon-x-ephemeris:before {
+  content: "\e6a3";
+}
+
+.icon-x-calculate:before {
+  content: "\e6c0";
+}
+
+.icon-x-star-time:before {
+  content: "\e6c1";
+}
+
+.icon-x-point-beam:before {
+  content: "\e6c2";
+}
+
+.icon-x-power:before {
+  content: "\e67b";
+}
+
+.icon-x-fx:before {
+  content: "\e67d";
+}
+
+.icon-x-orbit:before {
+  content: "\e67e";
+}
+
+.icon-x-rocket:before {
+  content: "\e67f";
+}
+
+.icon-x-loop-data:before {
+  content: "\e680";
+}
+
+.icon-x-encrypt:before {
+  content: "\e681";
+}
+
+.icon-x-mechanical-arm:before {
+  content: "\e682";
+}
+
+.icon-x-plan:before {
+  content: "\e683";
+}
+
+.icon-x-decrypt:before {
+  content: "\e684";
+}
+
+.icon-x-monitor:before {
+  content: "\e685";
+}
+
+.icon-x-angle:before {
+  content: "\e686";
+}
+
+.icon-x-control-cabin:before {
+  content: "\e687";
+}
+
+.icon-x-monitor-data:before {
+  content: "\e688";
+}
+
+.icon-x-lat-long:before {
+  content: "\e689";
+}
+
+.icon-x-receive-send:before {
+  content: "\e68a";
+}
+
+.icon-x-humidity:before {
+  content: "\e68b";
+}
+
+.icon-x-fuel:before {
+  content: "\e68c";
+}
+
+.icon-x-task:before {
+  content: "\e68d";
+}
+
+.icon-x-antenna:before {
+  content: "\e68e";
+}
+
+.icon-x-chain-supervisor:before {
+  content: "\e68f";
+}
+
+.icon-x-galaxy:before {
+  content: "\e690";
+}
+
+.icon-x-data-center:before {
+  content: "\e691";
+}
+
+.icon-x-engine:before {
+  content: "\e692";
+}
+
+.icon-x-agreement:before {
+  content: "\e693";
+}
+
+.icon-x-device:before {
+  content: "\e694";
+}
+
+.icon-x-temperature:before {
+  content: "\e696";
+}
+
+.icon-x-projection:before {
+  content: "\e697";
+}
+
+.icon-x-tracking:before {
+  content: "\e698";
+}
+
+.icon-x-space-site:before {
+  content: "\e69a";
+}
+
+.icon-x-dispatch:before {
+  content: "\e69b";
+}
+
+.icon-x-sun-board:before {
+  content: "\e69c";
+}
+
+.icon-x-prediction:before {
+  content: "\e69d";
+}
+
+.icon-x-origin-code:before {
+  content: "\e69e";
+}
+
+.icon-x-star-earth-link:before {
+  content: "\e6a0";
+}
+
+.icon-x-load-device:before {
+  content: "\e6a1";
+}
+
+.icon-x-repeater:before {
+  content: "\e6a2";
+}
+
+.icon-x-telecontrol:before {
+  content: "\e6a4";
+}
+
+.icon-x-surveying-ship:before {
+  content: "\e6a5";
+}
+
+.icon-x-cmd-telecontrol:before {
+  content: "\e6a6";
+}
+
+.icon-x-scene:before {
+  content: "\e6a7";
+}
+
+.icon-x-electric-current:before {
+  content: "\e6a8";
+}
+
+.icon-x-satellite:before {
+  content: "\e6a9";
+}
+
+.icon-x-direction:before {
+  content: "\e6ab";
+}
+
+.icon-x-observe-station:before {
+  content: "\e6ac";
+}
+
+.icon-x-teleoperation:before {
+  content: "\e6ad";
+}
+
+.icon-x-telemetry-exception:before {
+  content: "\e6ae";
+}
+
+.icon-x-telemetry-data:before {
+  content: "\e6af";
+}
+
+.icon-x-emi:before {
+  content: "\e6b0";
+}
+
+.icon-x-gps:before {
+  content: "\e6b1";
+}
+
+.icon-x-transmission:before {
+  content: "\e6b2";
+}
+
+.icon-x-satellite-point:before {
+  content: "\e6b3";
+}
+
+.icon-x-star-link:before {
+  content: "\e6b4";
+}
+
+.icon-x-flight-attitude:before {
+  content: "\e6b5";
+}
+
+.icon-x-boot-data:before {
+  content: "\e6b6";
+}
+
+.icon-x-telecontrol-frame:before {
+  content: "\e6b7";
+}
+
+.icon-x-format-frame:before {
+  content: "\e6b8";
+}
+
+.icon-x-constellation:before {
+  content: "\e6b9";
+}
+
+.icon-x-voltage:before {
+  content: "\e6ba";
+}
+
+.icon-x-earth:before {
+  content: "\e6bb";
+}
+
+.icon-x-orbit-determine:before {
+  content: "\e6bc";
+}
+
+.icon-x-coordinate-system:before {
+  content: "\e6bd";
+}
+
+.icon-x-wave-beam:before {
+  content: "\e6be";
+}
+

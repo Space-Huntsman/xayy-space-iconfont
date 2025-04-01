@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>YY Space Iconfont Demo</title>
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="iconfont.css">
+  <script src="iconfont.js"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #0366d6;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background: #0245a3;
+    }
+    .github-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      background: #24292e;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+      margin-right: 10px;
+    }
+    .github-btn:hover {
+      background: #1a1f23;
+    }
+    .github-btn svg {
+      margin-right: 8px;
+      width: 20px;
+      height: 20px;
+    }
+    .header-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .icon_lists {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .icon_lists li {
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    .icon_lists li:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
+    }
+    .icon {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .svg-icon {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;
+      overflow: hidden;
+    }
+    .name {
+      font-size: 14px;
+      color: #666;
+      margin: 5px 0;
+    }
+    .code-name {
+      font-size: 12px;
+      color: #999;
+      word-break: break-all;
+      user-select: all;
+    }
+    .tab-container .content {
+      display: none;
+    }
+    .tab-container .content.active {
+      display: block;
+    }
+    .nav-tabs {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    .nav-tabs .dib-box {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 10px;
+    }
+    .nav-tabs .dib {
+      cursor: pointer;
+      padding: 8px 24px;
+      border-radius: 4px;
+      transition: all 0.3s;
+      font-size: 14px;
+      border: 1px solid #eee;
+      background: #fff;
+    }
+    .nav-tabs .dib:hover {
+      background: #f8f9fa;
+      border-color: #e9ecef;
+    }
+    .nav-tabs .dib.active {
+      background: #0366d6;
+      color: white!important;
+      border-color: #0366d6;
+    }
+    .nav-tabs .dib span {
+      display: inline-block;
+      font-weight: 500;
+    }
+    .copied-tip {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      display: none;
+      z-index: 1000;
+    }
+    .article {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 4px;
+    }
+    .article h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .article hr {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 20px 0;
+    }
+    .article pre {
+      background: #fff;
+      padding: 15px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+    .article code {
+      font-family: Consolas, Monaco, 'Andale Mono', monospace;
+      background: #f1f1f1;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    .article ul {
+      padding-left: 20px;
+    }
+    .article p {
+      line-height: 1.6;
+    }
+    .article blockquote {
+      margin: 0;
+      padding: 10px 20px;
+      background: #fff;
+      border-left: 4px solid #0366d6;
+      margin-bottom: 20px;
+    }
+    @font-face {
+      font-family: 'yy-space';
+      src: url('iconfont.woff2?t=1743468307655') format('woff2'),
+           url('iconfont.woff?t=1743468307655') format('woff'),
+           url('iconfont.ttf?t=1743468307655') format('truetype');
+    }
+    .yy-space {
+      font-family: "yy-space" !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  </style>
+</head>
+<body>
+  <div class="copied-tip">已复制到剪贴板</div>
+  <div class="container">
+    <div class="header">
+      <h1> Space Iconfont</h1>
+      <div class="header-buttons">
+      
+        <a target="_blank" href="https://www.xianyanyu.tech/" class="download-btn" style="background: #f80303; color: #fff;">
+          衍舆航天科技官网
+        </a>
+        <a target="_blank" href="https://github.com/Space-Huntsman/xayy-space-iconfont/archive/refs/heads/main.zip" class="download-btn">
+          下载图标库
+        </a>
+        <a target="_blank" href="https://github.com/Space-Huntsman/xayy-space-iconfont" class="github-btn">
+          <svg viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="main">
+      <div class="nav-tabs">
+        <ul id="tabs" class="dib-box">
+          <li class="dib active"><span>Unicode</span></li>
+          <li class="dib"><span>Font class</span></li>
+          <li class="dib"><span>Symbol</span></li>
+        </ul>
+      </div>
+      <div class="tab-container">
+        <div class="content unicode">
+          <ul class="icon_lists">
+            <li class="dib">
+              <span class="icon yy-space">&#xe699;</span>
+              <div class="name">覆盖</div>
+              <div class="code-name">&amp;#xe699;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe695;</span>
+              <div class="name">弧段</div>
+              <div class="code-name">&amp;#xe695;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a3;</span>
+              <div class="name">星历</div>
+              <div class="code-name">&amp;#xe6a3;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6c0;</span>
+              <div class="name">控制计算</div>
+              <div class="code-name">&amp;#xe6c0;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6c1;</span>
+              <div class="name">星上时</div>
+              <div class="code-name">&amp;#xe6c1;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6c2;</span>
+              <div class="name">点波束</div>
+              <div class="code-name">&amp;#xe6c2;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe67b;</span>
+              <div class="name">功率</div>
+              <div class="code-name">&amp;#xe67b;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe67d;</span>
+              <div class="name">公式</div>
+              <div class="code-name">&amp;#xe67d;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe67e;</span>
+              <div class="name">轨道</div>
+              <div class="code-name">&amp;#xe67e;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe67f;</span>
+              <div class="name">火箭</div>
+              <div class="code-name">&amp;#xe67f;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe680;</span>
+              <div class="name">回路</div>
+              <div class="code-name">&amp;#xe680;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe681;</span>
+              <div class="name">加密</div>
+              <div class="code-name">&amp;#xe681;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe682;</span>
+              <div class="name">机械臂</div>
+              <div class="code-name">&amp;#xe682;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe683;</span>
+              <div class="name">计划</div>
+              <div class="code-name">&amp;#xe683;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe684;</span>
+              <div class="name">解密</div>
+              <div class="code-name">&amp;#xe684;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe685;</span>
+              <div class="name">监控</div>
+              <div class="code-name">&amp;#xe685;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe686;</span>
+              <div class="name">角度</div>
+              <div class="code-name">&amp;#xe686;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe687;</span>
+              <div class="name">驾驶舱</div>
+              <div class="code-name">&amp;#xe687;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe688;</span>
+              <div class="name">监视</div>
+              <div class="code-name">&amp;#xe688;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe689;</span>
+              <div class="name">经纬度</div>
+              <div class="code-name">&amp;#xe689;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe68a;</span>
+              <div class="name">收发</div>
+              <div class="code-name">&amp;#xe68a;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe68b;</span>
+              <div class="name">湿度</div>
+              <div class="code-name">&amp;#xe68b;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe68c;</span>
+              <div class="name">燃料</div>
+              <div class="code-name">&amp;#xe68c;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe68d;</span>
+              <div class="name">任务</div>
+              <div class="code-name">&amp;#xe68d;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe68e;</span>
+              <div class="name">天线</div>
+              <div class="code-name">&amp;#xe68e;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe68f;</span>
+              <div class="name">链监</div>
+              <div class="code-name">&amp;#xe68f;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe690;</span>
+              <div class="name">天体</div>
+              <div class="code-name">&amp;#xe690;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe691;</span>
+              <div class="name">数据中心</div>
+              <div class="code-name">&amp;#xe691;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe692;</span>
+              <div class="name">推进器</div>
+              <div class="code-name">&amp;#xe692;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe693;</span>
+              <div class="name">协议</div>
+              <div class="code-name">&amp;#xe693;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe694;</span>
+              <div class="name">设备</div>
+              <div class="code-name">&amp;#xe694;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe696;</span>
+              <div class="name">温度</div>
+              <div class="code-name">&amp;#xe696;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe697;</span>
+              <div class="name">投影</div>
+              <div class="code-name">&amp;#xe697;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe698;</span>
+              <div class="name">外测数据</div>
+              <div class="code-name">&amp;#xe698;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe69a;</span>
+              <div class="name">空间站</div>
+              <div class="code-name">&amp;#xe69a;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe69b;</span>
+              <div class="name">调度</div>
+              <div class="code-name">&amp;#xe69b;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe69c;</span>
+              <div class="name">太阳帆板</div>
+              <div class="code-name">&amp;#xe69c;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe69d;</span>
+              <div class="name">预报</div>
+              <div class="code-name">&amp;#xe69d;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe69e;</span>
+              <div class="name">源码</div>
+              <div class="code-name">&amp;#xe69e;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a0;</span>
+              <div class="name">星地链接</div>
+              <div class="code-name">&amp;#xe6a0;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a1;</span>
+              <div class="name">载荷</div>
+              <div class="code-name">&amp;#xe6a1;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a2;</span>
+              <div class="name">转发器</div>
+              <div class="code-name">&amp;#xe6a2;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a4;</span>
+              <div class="name">遥控</div>
+              <div class="code-name">&amp;#xe6a4;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a5;</span>
+              <div class="name">测量船</div>
+              <div class="code-name">&amp;#xe6a5;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a6;</span>
+              <div class="name">遥控发令</div>
+              <div class="code-name">&amp;#xe6a6;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a7;</span>
+              <div class="name">场景</div>
+              <div class="code-name">&amp;#xe6a7;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a8;</span>
+              <div class="name">电流</div>
+              <div class="code-name">&amp;#xe6a8;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a9;</span>
+              <div class="name">卫星</div>
+              <div class="code-name">&amp;#xe6a9;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6ab;</span>
+              <div class="name">方向</div>
+              <div class="code-name">&amp;#xe6ab;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6ac;</span>
+              <div class="name">测站</div>
+              <div class="code-name">&amp;#xe6ac;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6ad;</span>
+              <div class="name">遥控作业</div>
+              <div class="code-name">&amp;#xe6ad;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6ae;</span>
+              <div class="name">遥测中断</div>
+              <div class="code-name">&amp;#xe6ae;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6af;</span>
+              <div class="name">遥测数据</div>
+              <div class="code-name">&amp;#xe6af;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b0;</span>
+              <div class="name">干扰</div>
+              <div class="code-name">&amp;#xe6b0;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b1;</span>
+              <div class="name">定位</div>
+              <div class="code-name">&amp;#xe6b1;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b2;</span>
+              <div class="name">传输</div>
+              <div class="code-name">&amp;#xe6b2;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b3;</span>
+              <div class="name">星下点</div>
+              <div class="code-name">&amp;#xe6b3;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b4;</span>
+              <div class="name">星间链接</div>
+              <div class="code-name">&amp;#xe6b4;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b5;</span>
+              <div class="name">姿态</div>
+              <div class="code-name">&amp;#xe6b5;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b6;</span>
+              <div class="name">引导数据</div>
+              <div class="code-name">&amp;#xe6b6;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b7;</span>
+              <div class="name">遥控帧</div>
+              <div class="code-name">&amp;#xe6b7;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b8;</span>
+              <div class="name">帧格式</div>
+              <div class="code-name">&amp;#xe6b8;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b9;</span>
+              <div class="name">星座</div>
+              <div class="code-name">&amp;#xe6b9;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6ba;</span>
+              <div class="name">电压</div>
+              <div class="code-name">&amp;#xe6ba;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6bb;</span>
+              <div class="name">地球</div>
+              <div class="code-name">&amp;#xe6bb;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6bc;</span>
+              <div class="name">定轨</div>
+              <div class="code-name">&amp;#xe6bc;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6bd;</span>
+              <div class="name">坐标系</div>
+              <div class="code-name">&amp;#xe6bd;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6be;</span>
+              <div class="name">波束</div>
+              <div class="code-name">&amp;#xe6be;</div>
+            </li>
+          </ul>
+          <div class="article markdown">
+            <h2 id="unicode-">Unicode 引用</h2>
+            <hr>
+            <p>Unicode 是字体在网页端最原始的应用方式，特点是：</p>
+            <ul>
+              <li>支持按字体的方式去动态调整图标大小，颜色等等。</li>
+              <li>默认情况下不支持多色，直接添加多色图标会自动去色。</li>
+            </ul>
+            <blockquote>
+              <p>注意：新版 iconfont 支持两种方式引用多色图标：SVG symbol 引用方式和彩色字体图标模式。（使用彩色字体图标需要在「编辑项目」中开启「彩色」选项后并重新生成。）</p>
+            </blockquote>
+            <p>Unicode 使用步骤如下：</p>
+            <h3 id="-font-face">第一步：拷贝项目下面生成的 <code>@font-face</code></h3>
+            <pre><code class="language-css">@font-face {
+  font-family: 'yy-space';
+  src: url('iconfont.woff2?t=1743468307655') format('woff2'),
+       url('iconfont.woff?t=1743468307655') format('woff'),
+       url('iconfont.ttf?t=1743468307655') format('truetype');
+}</code></pre>
+            <h3 id="-iconfont-">第二步：定义使用 iconfont 的样式</h3>
+            <pre><code class="language-css">.yy-space {
+  font-family: "yy-space" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}</code></pre>
+            <h3 id="-">第三步：挑选相应图标并获取字体编码，应用于页面</h3>
+            <pre><code class="language-html">&lt;span class="yy-space"&gt;&amp;#x33;&lt;/span&gt;</code></pre>
+          </div>
+        </div>
+        <div class="content font-class">
+          <ul class="icon_lists">
+            <li class="dib">
+              <span class="icon yy-space icon-x-cover"></span>
+              <div class="name">覆盖</div>
+              <div class="code-name">.icon-x-cover</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-arc-segment"></span>
+              <div class="name">弧段</div>
+              <div class="code-name">.icon-x-arc-segment</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-ephemeris"></span>
+              <div class="name">星历</div>
+              <div class="code-name">.icon-x-ephemeris</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-calculate"></span>
+              <div class="name">控制计算</div>
+              <div class="code-name">.icon-x-calculate</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-star-time"></span>
+              <div class="name">星上时</div>
+              <div class="code-name">.icon-x-star-time</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-point-beam"></span>
+              <div class="name">点波束</div>
+              <div class="code-name">.icon-x-point-beam</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-power"></span>
+              <div class="name">功率</div>
+              <div class="code-name">.icon-x-power</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-fx"></span>
+              <div class="name">公式</div>
+              <div class="code-name">.icon-x-fx</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-orbit"></span>
+              <div class="name">轨道</div>
+              <div class="code-name">.icon-x-orbit</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-rocket"></span>
+              <div class="name">火箭</div>
+              <div class="code-name">.icon-x-rocket</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-loop-data"></span>
+              <div class="name">回路</div>
+              <div class="code-name">.icon-x-loop-data</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-encrypt"></span>
+              <div class="name">加密</div>
+              <div class="code-name">.icon-x-encrypt</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-mechanical-arm"></span>
+              <div class="name">机械臂</div>
+              <div class="code-name">.icon-x-mechanical-arm</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-plan"></span>
+              <div class="name">计划</div>
+              <div class="code-name">.icon-x-plan</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-decrypt"></span>
+              <div class="name">解密</div>
+              <div class="code-name">.icon-x-decrypt</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-monitor"></span>
+              <div class="name">监控</div>
+              <div class="code-name">.icon-x-monitor</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-angle"></span>
+              <div class="name">角度</div>
+              <div class="code-name">.icon-x-angle</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-control-cabin"></span>
+              <div class="name">驾驶舱</div>
+              <div class="code-name">.icon-x-control-cabin</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-monitor-data"></span>
+              <div class="name">监视</div>
+              <div class="code-name">.icon-x-monitor-data</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-lat-long"></span>
+              <div class="name">经纬度</div>
+              <div class="code-name">.icon-x-lat-long</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-receive-send"></span>
+              <div class="name">收发</div>
+              <div class="code-name">.icon-x-receive-send</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-humidity"></span>
+              <div class="name">湿度</div>
+              <div class="code-name">.icon-x-humidity</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-fuel"></span>
+              <div class="name">燃料</div>
+              <div class="code-name">.icon-x-fuel</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-task"></span>
+              <div class="name">任务</div>
+              <div class="code-name">.icon-x-task</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-antenna"></span>
+              <div class="name">天线</div>
+              <div class="code-name">.icon-x-antenna</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-chain-supervisor"></span>
+              <div class="name">链监</div>
+              <div class="code-name">.icon-x-chain-supervisor</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-galaxy"></span>
+              <div class="name">天体</div>
+              <div class="code-name">.icon-x-galaxy</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-data-center"></span>
+              <div class="name">数据中心</div>
+              <div class="code-name">.icon-x-data-center</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-engine"></span>
+              <div class="name">推进器</div>
+              <div class="code-name">.icon-x-engine</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-agreement"></span>
+              <div class="name">协议</div>
+              <div class="code-name">.icon-x-agreement</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-device"></span>
+              <div class="name">设备</div>
+              <div class="code-name">.icon-x-device</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-temperature"></span>
+              <div class="name">温度</div>
+              <div class="code-name">.icon-x-temperature</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-projection"></span>
+              <div class="name">投影</div>
+              <div class="code-name">.icon-x-projection</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-tracking"></span>
+              <div class="name">外测数据</div>
+              <div class="code-name">.icon-x-tracking</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-space-site"></span>
+              <div class="name">空间站</div>
+              <div class="code-name">.icon-x-space-site</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-dispatch"></span>
+              <div class="name">调度</div>
+              <div class="code-name">.icon-x-dispatch</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-sun-board"></span>
+              <div class="name">太阳帆板</div>
+              <div class="code-name">.icon-x-sun-board</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-prediction"></span>
+              <div class="name">预报</div>
+              <div class="code-name">.icon-x-prediction</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-origin-code"></span>
+              <div class="name">源码</div>
+              <div class="code-name">.icon-x-origin-code</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-star-earth-link"></span>
+              <div class="name">星地链接</div>
+              <div class="code-name">.icon-x-star-earth-link</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-load-device"></span>
+              <div class="name">载荷</div>
+              <div class="code-name">.icon-x-load-device</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-repeater"></span>
+              <div class="name">转发器</div>
+              <div class="code-name">.icon-x-repeater</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-telecontrol"></span>
+              <div class="name">遥控</div>
+              <div class="code-name">.icon-x-telecontrol</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-surveying-ship"></span>
+              <div class="name">测量船</div>
+              <div class="code-name">.icon-x-surveying-ship</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-cmd-telecontrol"></span>
+              <div class="name">遥控发令</div>
+              <div class="code-name">.icon-x-cmd-telecontrol</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-scene"></span>
+              <div class="name">场景</div>
+              <div class="code-name">.icon-x-scene</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-electric-current"></span>
+              <div class="name">电流</div>
+              <div class="code-name">.icon-x-electric-current</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-satellite"></span>
+              <div class="name">卫星</div>
+              <div class="code-name">.icon-x-satellite</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-direction"></span>
+              <div class="name">方向</div>
+              <div class="code-name">.icon-x-direction</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-observe-station"></span>
+              <div class="name">测站</div>
+              <div class="code-name">.icon-x-observe-station</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space icon-x-teleoperation"></span>
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-teleoperation"></use>
+              </svg>
+              <div class="name">遥控作业</div>
+              <div class="code-name">#icon-x-teleoperation</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-telemetry-exception"></use>
+              </svg>
+              <div class="name">遥测中断</div>
+              <div class="code-name">#icon-x-telemetry-exception</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-telemetry-data"></use>
+              </svg>
+              <div class="name">遥测数据</div>
+              <div class="code-name">#icon-x-telemetry-data</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-emi"></use>
+              </svg>
+              <div class="name">干扰</div>
+              <div class="code-name">#icon-x-emi</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-gps"></use>
+              </svg>
+              <div class="name">定位</div>
+              <div class="code-name">#icon-x-gps</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-transmission"></use>
+              </svg>
+              <div class="name">传输</div>
+              <div class="code-name">#icon-x-transmission</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-satellite-point"></use>
+              </svg>
+              <div class="name">星下点</div>
+              <div class="code-name">#icon-x-satellite-point</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-star-link"></use>
+              </svg>
+              <div class="name">星间链接</div>
+              <div class="code-name">#icon-x-star-link</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-flight-attitude"></use>
+              </svg>
+              <div class="name">姿态</div>
+              <div class="code-name">#icon-x-flight-attitude</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-boot-data"></use>
+              </svg>
+              <div class="name">引导数据</div>
+              <div class="code-name">#icon-x-boot-data</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-telecontrol-frame"></use>
+              </svg>
+              <div class="name">遥控帧</div>
+              <div class="code-name">#icon-x-telecontrol-frame</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-format-frame"></use>
+              </svg>
+              <div class="name">帧格式</div>
+              <div class="code-name">#icon-x-format-frame</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-constellation"></use>
+              </svg>
+              <div class="name">星座</div>
+              <div class="code-name">#icon-x-constellation</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-voltage"></use>
+              </svg>
+              <div class="name">电压</div>
+              <div class="code-name">#icon-x-voltage</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-earth"></use>
+              </svg>
+              <div class="name">地球</div>
+              <div class="code-name">#icon-x-earth</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-orbit-determine"></use>
+              </svg>
+              <div class="name">定轨</div>
+              <div class="code-name">#icon-x-orbit-determine</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-coordinate-system"></use>
+              </svg>
+              <div class="name">坐标系</div>
+              <div class="code-name">#icon-x-coordinate-system</div>
+            </li>
+            <li class="dib">
+              <svg class="icon svg-icon" aria-hidden="true">
+                <use xlink:href="#icon-x-wave-beam"></use>
+              </svg>
+              <div class="name">波束</div>
+              <div class="code-name">#icon-x-wave-beam</div>
+            </li>
+          </ul>
+          <div class="article markdown">
+            <h2 id="font-class-">Font class 引用</h2>
+            <hr>
+            <p>font-class 是 Unicode 使用方式的一种变种，主要是解决 Unicode 书写不直观，语意不明确的问题。</p>
+            <p>与 Unicode 使用方式相比，具有如下特点：</p>
+            <ul>
+              <li>相比于 Unicode 语意明确，书写更直观。可以很容易分辨这个 icon 是什么。</li>
+              <li>因为使用 class 来定义图标，所以当要替换图标时，只需要修改 class 里面的 Unicode 引用。</li>
+            </ul>
+            <p>使用步骤如下：</p>
+            <h3 id="-fontclass-">第一步：引入项目下面生成的 fontclass 代码：</h3>
+            <pre><code class="language-html">&lt;link rel="stylesheet" href="./iconfont.css"&gt;</code></pre>
+            <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+            <pre><code class="language-html">&lt;span class="yy-space icon-xxx"&gt;&lt;/span&gt;</code></pre>
+          </div>
+        </div>
+        <div class="content symbol">
+          <ul class="icon_lists">
+            <li class="dib">
+              <span class="icon yy-space">&#xe699;</span>
+              <div class="name">覆盖</div>
+              <div class="code-name">&amp;#xe699;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe695;</span>
+              <div class="name">弧段</div>
+              <div class="code-name">&amp;#xe695;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a3;</span>
+              <div class="name">星历</div>
+              <div class="code-name">&amp;#xe6a3;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6c0;</span>
+              <div class="name">控制计算</div>
+              <div class="code-name">&amp;#xe6c0;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6c1;</span>
+              <div class="name">星上时</div>
+              <div class="code-name">&amp;#xe6c1;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6c2;</span>
+              <div class="name">点波束</div>
+              <div class="code-name">&amp;#xe6c2;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe67b;</span>
+              <div class="name">功率</div>
+              <div class="code-name">&amp;#xe67b;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe67d;</span>
+              <div class="name">公式</div>
+              <div class="code-name">&amp;#xe67d;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe67e;</span>
+              <div class="name">轨道</div>
+              <div class="code-name">&amp;#xe67e;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe67f;</span>
+              <div class="name">火箭</div>
+              <div class="code-name">&amp;#xe67f;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe680;</span>
+              <div class="name">回路</div>
+              <div class="code-name">&amp;#xe680;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe681;</span>
+              <div class="name">加密</div>
+              <div class="code-name">&amp;#xe681;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe682;</span>
+              <div class="name">机械臂</div>
+              <div class="code-name">&amp;#xe682;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe683;</span>
+              <div class="name">计划</div>
+              <div class="code-name">&amp;#xe683;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe684;</span>
+              <div class="name">解密</div>
+              <div class="code-name">&amp;#xe684;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe685;</span>
+              <div class="name">监控</div>
+              <div class="code-name">&amp;#xe685;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe686;</span>
+              <div class="name">角度</div>
+              <div class="code-name">&amp;#xe686;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe687;</span>
+              <div class="name">驾驶舱</div>
+              <div class="code-name">&amp;#xe687;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe688;</span>
+              <div class="name">监视</div>
+              <div class="code-name">&amp;#xe688;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe689;</span>
+              <div class="name">经纬度</div>
+              <div class="code-name">&amp;#xe689;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe68a;</span>
+              <div class="name">收发</div>
+              <div class="code-name">&amp;#xe68a;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe68b;</span>
+              <div class="name">湿度</div>
+              <div class="code-name">&amp;#xe68b;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe68c;</span>
+              <div class="name">燃料</div>
+              <div class="code-name">&amp;#xe68c;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe68d;</span>
+              <div class="name">任务</div>
+              <div class="code-name">&amp;#xe68d;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe68e;</span>
+              <div class="name">天线</div>
+              <div class="code-name">&amp;#xe68e;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe68f;</span>
+              <div class="name">链监</div>
+              <div class="code-name">&amp;#xe68f;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe690;</span>
+              <div class="name">天体</div>
+              <div class="code-name">&amp;#xe690;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe691;</span>
+              <div class="name">数据中心</div>
+              <div class="code-name">&amp;#xe691;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe692;</span>
+              <div class="name">推进器</div>
+              <div class="code-name">&amp;#xe692;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe693;</span>
+              <div class="name">协议</div>
+              <div class="code-name">&amp;#xe693;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe694;</span>
+              <div class="name">设备</div>
+              <div class="code-name">&amp;#xe694;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe696;</span>
+              <div class="name">温度</div>
+              <div class="code-name">&amp;#xe696;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe697;</span>
+              <div class="name">投影</div>
+              <div class="code-name">&amp;#xe697;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe698;</span>
+              <div class="name">外测数据</div>
+              <div class="code-name">&amp;#xe698;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe69a;</span>
+              <div class="name">空间站</div>
+              <div class="code-name">&amp;#xe69a;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe69b;</span>
+              <div class="name">调度</div>
+              <div class="code-name">&amp;#xe69b;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe69c;</span>
+              <div class="name">太阳帆板</div>
+              <div class="code-name">&amp;#xe69c;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe69d;</span>
+              <div class="name">预报</div>
+              <div class="code-name">&amp;#xe69d;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe69e;</span>
+              <div class="name">源码</div>
+              <div class="code-name">&amp;#xe69e;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a0;</span>
+              <div class="name">星地链接</div>
+              <div class="code-name">&amp;#xe6a0;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a1;</span>
+              <div class="name">载荷</div>
+              <div class="code-name">&amp;#xe6a1;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a2;</span>
+              <div class="name">转发器</div>
+              <div class="code-name">&amp;#xe6a2;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a4;</span>
+              <div class="name">遥控</div>
+              <div class="code-name">&amp;#xe6a4;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a5;</span>
+              <div class="name">测量船</div>
+              <div class="code-name">&amp;#xe6a5;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a6;</span>
+              <div class="name">遥控发令</div>
+              <div class="code-name">&amp;#xe6a6;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a7;</span>
+              <div class="name">场景</div>
+              <div class="code-name">&amp;#xe6a7;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a8;</span>
+              <div class="name">电流</div>
+              <div class="code-name">&amp;#xe6a8;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6a9;</span>
+              <div class="name">卫星</div>
+              <div class="code-name">&amp;#xe6a9;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6ab;</span>
+              <div class="name">方向</div>
+              <div class="code-name">&amp;#xe6ab;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6ac;</span>
+              <div class="name">测站</div>
+              <div class="code-name">&amp;#xe6ac;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6ad;</span>
+              <div class="name">遥控作业</div>
+              <div class="code-name">&amp;#xe6ad;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6ae;</span>
+              <div class="name">遥测中断</div>
+              <div class="code-name">&amp;#xe6ae;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6af;</span>
+              <div class="name">遥测数据</div>
+              <div class="code-name">&amp;#xe6af;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b0;</span>
+              <div class="name">干扰</div>
+              <div class="code-name">&amp;#xe6b0;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b1;</span>
+              <div class="name">定位</div>
+              <div class="code-name">&amp;#xe6b1;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b2;</span>
+              <div class="name">传输</div>
+              <div class="code-name">&amp;#xe6b2;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b3;</span>
+              <div class="name">星下点</div>
+              <div class="code-name">&amp;#xe6b3;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b4;</span>
+              <div class="name">星间链接</div>
+              <div class="code-name">&amp;#xe6b4;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b5;</span>
+              <div class="name">姿态</div>
+              <div class="code-name">&amp;#xe6b5;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b6;</span>
+              <div class="name">引导数据</div>
+              <div class="code-name">&amp;#xe6b6;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b7;</span>
+              <div class="name">遥控帧</div>
+              <div class="code-name">&amp;#xe6b7;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b8;</span>
+              <div class="name">帧格式</div>
+              <div class="code-name">&amp;#xe6b8;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6b9;</span>
+              <div class="name">星座</div>
+              <div class="code-name">&amp;#xe6b9;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6ba;</span>
+              <div class="name">电压</div>
+              <div class="code-name">&amp;#xe6ba;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6bb;</span>
+              <div class="name">地球</div>
+              <div class="code-name">&amp;#xe6bb;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6bc;</span>
+              <div class="name">定轨</div>
+              <div class="code-name">&amp;#xe6bc;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6bd;</span>
+              <div class="name">坐标系</div>
+              <div class="code-name">&amp;#xe6bd;</div>
+            </li>
+            <li class="dib">
+              <span class="icon yy-space">&#xe6be;</span>
+              <div class="name">波束</div>
+              <div class="code-name">&amp;#xe6be;</div>
+            </li>
+          </ul>
+          <div class="article markdown">
+            <h2 id="symbol-">Symbol 引用</h2>
+            <hr>
+            <p>这是一种全新的使用方式，应该说这才是未来的主流，也是平台目前推荐的用法。相关介绍可以参考这篇<a href="">文章</a>
+              这种用法其实是做了一个 SVG 的集合，与另外两种相比具有如下特点：</p>
+            <ul>
+              <li>支持多色图标了，不再受单色限制。</li>
+              <li>通过一些技巧，支持像字体那样，通过 <code>font-size</code>, <code>color</code> 来调整样式。</li>
+              <li>兼容性较差，支持 IE9+，及现代浏览器。</li>
+              <li>浏览器渲染 SVG 的性能一般，还不如 png。</li>
+            </ul>
+            <p>使用步骤如下：</p>
+            <h3 id="-symbol-">第一步：引入项目下面生成的 symbol 代码：</h3>
+            <pre><code class="language-html">&lt;script src="./iconfont.js"&gt;&lt;/script&gt;</code></pre>
+            <h3 id="-css-">第二步：加入通用 CSS 代码（引入一次就行）：</h3>
+            <pre><code class="language-html">&lt;style&gt;
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+&lt;/style&gt;</code></pre>
+            <h3 id="-">第三步：挑选相应图标并获取类名，应用于页面：</h3>
+            <pre><code class="language-html">&lt;svg class="icon" aria-hidden="true"&gt;
+  &lt;use xlink:href="#icon-xxx"&gt;&lt;/use&gt;
+&lt;/svg&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('#tabs li');
+      const contents = document.querySelectorAll('.tab-container .content');
+      const copiedTip = document.querySelector('.copied-tip');
+      
+      // 显示第一个标签页
+      tabs[0].classList.add('active');
+      contents[0].style.display = 'block';
+      
+      // 标签切换功能
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('click', function() {
+          if (this.classList.contains('active')) {
+            return;
+          }
+          
+          // 移除所有活动状态
+          tabs.forEach(t => t.classList.remove('active'));
+          contents.forEach(c => c.style.display = 'none');
+          
+          // 添加当前活动状态
+          this.classList.add('active');
+          contents[index].style.display = 'block';
+        });
+      });
+
+      // 复制功能
+      function showCopiedTip() {
+        copiedTip.style.display = 'block';
+        setTimeout(() => {
+          copiedTip.style.display = 'none';
+        }, 1000);
+      }
+
+      // 为每个图标添加点击复制功能
+      document.querySelectorAll('.icon_lists li').forEach(li => {
+        li.addEventListener('click', function() {
+          const currentTab = document.querySelector('#tabs li.active');
+          const tabType = currentTab.textContent.trim();
+          let copyText = '';
+          
+          switch(tabType) {
+            case 'Unicode':
+              copyText = `<i class="yy-space">${this.querySelector('.icon').textContent}</i>`;
+              break;
+            case 'Font class':
+              const className = this.querySelector('.code-name').textContent.trim();
+              copyText = `<i class="yy-space ${className}"></i>`;
+              break;
+            case 'Symbol':
+              const symbolId = this.querySelector('.code-name').textContent.trim();
+              copyText = `<svg class="icon" aria-hidden="true"><use xlink:href="${symbolId}"></use></svg>`;
+              break;
+          }
+          
+          // 复制到剪贴板
+          navigator.clipboard.writeText(copyText).then(() => {
+            showCopiedTip();
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
