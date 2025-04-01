@@ -17,8 +17,9 @@
 ### 方式二：通过 CDN 引入
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Space-Huntsman/xayy-space-iconfont@gh-pages/iconfont.css">
-<script src="https://cdn.jsdelivr.net/gh/Space-Huntsman/xayy-space-iconfont@gh-pages/iconfont.js"></script>
+<link rel="stylesheet" href="https://space-huntsman.github.io/xayy-space-iconfont/iconfont.css">
+<script src="
+https://space-huntsman.github.io/xayy-space-iconfont/iconfont.js"></script>
 ```
 
 ## 使用方法
